@@ -1,0 +1,14 @@
+192.168.41.107 - 2021-11-05T20:30:37+07:00 "GET / HTTP/1.1" 200 22484 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.011 0.000 0.012 0.012
+192.168.41.107 - 2021-11-05T20:30:57+07:00 "GET / HTTP/1.1" 200 22500 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.004 0.000 0.000 0.000
+192.168.41.107 - 2021-11-05T20:31:03+07:00 "GET /hs HTTP/1.1" 404 41 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - -
+192.168.41.107 - 2021-11-05T20:32:39+07:00 "GET /nina HTTP/1.1" 404 41 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - -
+192.168.41.107 - 2021-11-05T20:39:02+07:00 "GET /nina HTTP/1.1" 404 41 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - -
+192.168.41.107 - 2021-11-05T21:11:11+07:00 "GET /yudis HTTP/1.1" 404 41 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - -
+192.168.41.107 - 2021-11-05T21:11:46+07:00 "GET /yudistira HTTP/1.1" 404 41 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - -
+192.168.70.103 - 2021-11-11T11:44:25+07:00 "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - 0.000
+192.168.70.103 - 2021-11-11T11:44:26+07:00 "GET /favicon.ico HTTP/1.1" 404 41 "http://192.168.41.174:3005/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - -
+192.168.70.103 - 2021-11-11T11:45:04+07:00 "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - 0.000
+192.168.70.103 - 2021-11-11T11:45:05+07:00 "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.000 - - 0.000
+192.168.70.103 - 2021-11-11T11:45:06+07:00 "GET / HTTP/1.1" 200 22494 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.150 0.000 0.108 0.148
+192.168.70.103 - 2021-11-11T11:45:59+07:00 "GET / HTTP/1.1" 200 22489 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" 0.014 0.000 0.012 0.016
+192.168.41.107 - - [25/Nov/2021:09:43:47 +0700] "GET /jdjd HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36"

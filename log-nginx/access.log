@@ -1,0 +1,8 @@
+192.168.41.107 - - [03/Nov/2021:14:52:54 +0700] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [03/Nov/2021:14:52:55 +0700] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [03/Nov/2021:14:53:05 +0700] "GET /info.html HTTP/1.1" 200 659 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [03/Nov/2021:14:53:47 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [03/Nov/2021:14:54:04 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [03/Nov/2021:14:54:05 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [03/Nov/2021:14:54:20 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [03/Nov/2021:14:54:21 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"

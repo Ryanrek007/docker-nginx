@@ -1,6 +1,6 @@
 FROM nginx:latest
-LABEL "Install nginx serveR only http port 80"="customize version by Ryan"
-
+LABEL "Install nginx server only https port 443"="customize version by Ryan"
+LABEL "Certificate using"="psn.co.id"
 COPY ./info.html /usr/share/nginx/html/index.html
 
 RUN mkdir -p /var/www/html
@@ -11,9 +11,11 @@ COPY ./nginx/default.conf /etc/nginx/conf.d/
 
 #COPY ./nginx1-bak.conf /etc/nginx/
 
-#COPY ./ssl /etc/nginx/ssl
+COPY ./ssl /etc/nginx/ssl
 
-#RUN  apt-get update && apt-get install -y nano wget
+RUN  apt-get update && apt-get install -y nano wget
+
+EXPOSE 443
 
 #RUN apt-get update && apt-get install -y iputils-ping net-tools nano wget
 

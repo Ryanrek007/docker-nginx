@@ -6,3 +6,8 @@
 192.168.41.107 - - [03/Nov/2021:14:54:05 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
 192.168.41.107 - - [03/Nov/2021:14:54:20 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
 192.168.41.107 - - [03/Nov/2021:14:54:21 +0700] "GET /info.php HTTP/1.1" 404 555 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [07/Jan/2022:09:04:55 +0700] "GET / HTTP/1.1" 301 169 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.107 - - [07/Jan/2022:10:00:23 +0700] "GET / HTTP/1.1" 301 169 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" "-"
+192.168.41.174 - - [11/Jan/2022:17:24:31 +0700] "GET / HTTP/1.1" 404 153 "-" "curl/7.68.0" "-"
+192.168.41.107 - - [11/Jan/2022:17:24:43 +0700] "\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x03!\xD2(!\x93\xB6\xA4\x9E" 400 157 "-" "-" "-"
+192.168.41.107 - - [11/Jan/2022:17:24:43 +0700] "\x16\x03\x01\x02\x00\x01\x00\x01\xFC\x03\x03\xBE\xA7h\xD4\xD8\xF5\xA0\xC5\xD5-\xA6\x8F\xF3C\x81<\x9D\x12\xAES\x14C@\xE5c\xCF\x1C\x95'\xFB\x83\x13 \xFCi\xE8j\xF8\xF5`t~2(\xC7\x05\xE9dQp_H2\xEE\xE1\x95duY\x05=s\x1A~2\x00\x22JJ\x13\x01\x13\x02\x13\x03\xC0+\xC0/\xC0,\xC00\xCC\xA9\xCC\xA8\xC0\x13\xC0\x14\x00\x9C\x00\x9D\x00/\x005\x00" 400 157 "-" "-" "-"

@@ -6,8 +6,10 @@ services:
     #   context: ./
     #   dockerfile: Dockerfile
     #
-    image: nginx:stable-alpine
-    container_name: testing-nginx
+    #image: 192.168.41.29:5000/nginx-test:latest
+    #image: 192.168.41.29:5000/nginx:https
+    image: nginx:dearnam3
+    container_name: testing-nginx-docker
     restart: always
     working_dir: /etc/nginx
     volumes: 
@@ -15,8 +17,12 @@ services:
       - ./log-nginx:/var/log/nginx
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
+      #- ./testing-nginx:/var/www/html
+      #- ./ssl:/etc/nginx/ssl
+
     ports: 
-      - 3005:80
+      - 80:80
+      - 443:443
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     networks: 

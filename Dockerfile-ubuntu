@@ -1,0 +1,4 @@
+FROM ubuntu:20.04
+RUN apt-get update && apt-get -y install sudo nano wget curl
+ENV TZ=Asia/Jakarta
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

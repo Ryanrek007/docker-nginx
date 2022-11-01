@@ -4,7 +4,7 @@ LABEL "Certificate using"="psn.co.id"
 COPY ./info.html /usr/share/nginx/html/index.html
 
 RUN mkdir -p /var/www/html
-
+#test 
 RUN cp /usr/share/nginx/html/index.html /var/www/html/
 
 COPY ./nginx/default.conf /etc/nginx/conf.d/

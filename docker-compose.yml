@@ -2,13 +2,13 @@ version: "3.7"
 
 services:
   nginx:
-    # build:  #Ngebuild image dari file Dockerfile pada directory yang sama, jika belum pull dari docker registry/dockerhub
-    #   context: ./
-    #   dockerfile: Dockerfile
-    #
+     #Ngebuild image dari file Dockerfile pada directory yang sama, jika belum pull dari docker registry/dockerhub
+    build: 
+      context: ./
+      dockerfile: Dockerfile-https
     #image: 192.168.41.29:5000/nginx-test:latest
     #image: 192.168.41.29:5000/nginx:https
-    image: nginx:dearnam3
+    #image: nginx:dearnam3
     container_name: testing-nginx-docker
     restart: always
     working_dir: /etc/nginx

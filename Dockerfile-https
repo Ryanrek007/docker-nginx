@@ -2,7 +2,7 @@ FROM nginx:latest
 LABEL "Install nginx server only https port 443"="customize version by Ryan"
 LABEL "Certificate using"="psn.co.id"
 COPY ./info.html /usr/share/nginx/html/index.html
-#test push
+
 RUN mkdir -p /var/www/html
 
 RUN cp /usr/share/nginx/html/index.html /var/www/html/

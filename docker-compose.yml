@@ -2,11 +2,11 @@ version: "3.7"
 
 services:
   nginx:
-     #Ngebuild image dari file Dockerfile pada directory yang sama, jika belum pull dari docker registry/dockerhub
+    #Build an image from Dockerfile in the same directory If not set, pull from docker registry/dockerhub
     build: 
       context: ./
-      dockerfile: Dockerfile-https
-    #image: 192.168.41.29:5000/nginx:https
+      dockerfile: Dockerfile
+    #image: 192.168.41.29:5000/nginx:http
     container_name: testing-nginx-docker
     restart: always
     working_dir: /etc/nginx

@@ -1,0 +1,13 @@
+pipeline:
+  publish and build:
+    image: plugins/docker
+    secrets: [ docker_username, docker_password ]
+    registry: 192.168.41.29:5000
+    repo: 192.168.41.29:5000/nginx-testing
+    tags: 
+      - '1.0'
+    dockerfile: Dockerfile
+    insecure: true
+    image_pull_secrets:
+      - dockerconfigjson 
+  

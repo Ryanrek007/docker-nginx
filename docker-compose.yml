@@ -5,19 +5,14 @@ services:
     #Build an image from Dockerfile in the same directory If not set, pull from docker registry/dockerhub
     build: 
       context: ./
-      dockerfile: Dockerfile
-    #image: 192.168.41.29:5000/nginx:http
+      dockerfile: Dockerfile-https
     container_name: testing-nginx-docker
     restart: always
     working_dir: /etc/nginx
     volumes: 
-      - ./nginx:/etc/nginx/conf.d/
       - /var/log/nginx:/var/log/nginx
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
-      #- ./testing-nginx:/var/www/html
-      #- ./ssl:/etc/nginx/ssl
-
     ports: 
       - 80:80
       - 443:443

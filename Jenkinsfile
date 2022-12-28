@@ -32,7 +32,7 @@ pipeline {
     post{
         always{
             echo "Building success"
-            slackSend (channel: "#jenkins-notification" color: "good", message: "Message from Jenkins Pipeline")
+            slackSend (channel: "#jenkins-notification", color: "good", message: "Message from Jenkins Pipeline")
             // script {
             //     BUILD_USER = getBuildUser()
             // }

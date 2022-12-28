@@ -25,7 +25,7 @@ pipeline {
                 color: "good", 
                 message: 
                 "Message from Jenkins Pipeline  \
-                *${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} by ${BUILD_USER} \
+                *${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} by ${env.GIT_COMMITTER_NAME} \
                 \nMore info at: ${env.BUILD_URL}"
             )
                         

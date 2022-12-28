@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+       node {
+            label "cicd"
+       }
+    }
     stages{
         stage("Testing-pipelines") {
             steps {

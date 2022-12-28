@@ -1,15 +1,3 @@
-
-// import groovy.json.JsonOutput
-
-// def COLOR_MAP = [
-//     'SUCCESS': 'good', 
-//     'FAILURE': 'danger',
-// ]
-
-// def getBuildUser() {
-//     return currentBuild.rawBuild.getCause(Cause.UserIdCause).getUserId()
-// }
-
 pipeline {
     agent {
        node {
@@ -32,7 +20,15 @@ pipeline {
     post{
         always{
             echo "Building success"
-            slackSend (channel: "#jenkins-notification", color: "good", message: "Message from Jenkins Pipeline")
+            slackSend (
+                channel: "#jenkins-notification", 
+                color: "good", 
+                message: 
+                "Message from Jenkins Pipeline  \
+                *${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} by ${BUILD_USER} \
+                \nMore info at: ${env.BUILD_URL}"
+            )
+                        
             // script {
             //     BUILD_USER = getBuildUser()
             // }
@@ -40,6 +36,10 @@ pipeline {
             // color: COLOR_MAP[currentBuild.currentResult],
             // message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} by ${BUILD_USER} \
             // \nMore info at: ${env.BUILD_URL}"   
+        }
+        failure{
+            echo "Building failed"
+            slackSend (channel: "#jenkins-notification", color: "danger", message: "Message from Jenkins Pipeline")
 
         }
     }

@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo "Testing pipelines"
                 echo "on ${env.BRANCH_NAME}"
-                echo "on ${BRANCH_NAME}"
+                // echo "on ${BRANCH_NAME}"
                 echo "on ${BUILD_URL}"
                 echo "on ${env.BUILD_URL}"
 

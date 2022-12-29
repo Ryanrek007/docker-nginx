@@ -4,9 +4,6 @@ pipeline {
             label "cicd"
        }
     }
-    environment {
-        BUILD_USER = ''
-    }
     
     stages{
         stage("Testing-pipelines") {
@@ -24,7 +21,7 @@ pipeline {
                 channel: "#jenkins-notification", 
                 color: "good", 
                 message: 
-                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' \
+                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' on ${env.BRANCH_NAME} \
                 \n${env.BUILD_URL}"
             )
         }
@@ -34,7 +31,7 @@ pipeline {
                 channel: "#jenkins-notification", 
                 color: "danger", 
                 message: 
-                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' \
+                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' on ${env.BRANCH_NAME} \
                 \n${env.BUILD_URL}"
             )
         }

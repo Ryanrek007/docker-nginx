@@ -9,19 +9,18 @@ pipeline {
         stage("Testing-pipelines") {
             steps {
                 echo "Testing pipelines"
-                script{
+                // script{
                     // for (int i = 0; i <5; i++){
                     //     echo "script ${i}"
                     //     sleep(2)
                     // }
-                }
+                // }
             }           
         }
     }
 
     stages{
         stage("Testing scripting") {
-
             steps {
                 echo "Testing pipelines"
                 script{

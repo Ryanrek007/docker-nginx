@@ -40,7 +40,7 @@ pipeline {
                 echo "${BUILD_STATUS}"
                 echo "currentBuild.currentResult"
 
-				if (currentBuild.currentResult == 'SUCCESS') {
+				if ($BUILD_STATUS == 'SUCCESS') {
                     echo "Building Success"
                     slackSend (
                         channel: "#jenkins-notification", 
@@ -49,7 +49,7 @@ pipeline {
                         "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}'\
                         \n${env.BUILD_URL}"
                     )
-				} else if (currentBuild.currentResult == 'FAILURE') {
+				} else if ($BUILD_STATUS == 'FAILURE') {
                     echo "Building Failed"
                     slackSend (
                         channel: "#jenkins-notification", 

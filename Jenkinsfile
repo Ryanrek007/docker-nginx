@@ -19,7 +19,6 @@ pipeline {
         }
     }
 
-    stages{
         stage("Testing scripting") {
             steps {
                 echo "Testing pipelines"
@@ -32,7 +31,6 @@ pipeline {
                 }
             }           
         }
-    }
 
     post{
         success{

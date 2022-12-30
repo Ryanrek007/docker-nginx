@@ -9,6 +9,7 @@ pipeline {
         stage("Testing-pipelines") {
             steps {
                 echo "Testing pipelines"
+                chjsadk
                 // script{
                     // for (int i = 0; i <5; i++){
                     //     echo "script ${i}"

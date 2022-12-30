@@ -27,6 +27,7 @@ pipeline {
                         "lastName" : "Ryan"
                     ]
                     writeJSON(file: "data.json", json: data)
+                    akdjs
                 }
             }           
         }
@@ -40,7 +41,7 @@ pipeline {
                 echo "${BUILD_STATUS}"
                 echo "currentBuild.currentResult"
 
-				if ($BUILD_STATUS == 'SUCCESS') {
+				if (currentBuild.currentResult == 'SUCCESS') {
                     echo "Building Success"
                     slackSend (
                         channel: "#jenkins-notification", 
@@ -49,7 +50,7 @@ pipeline {
                         "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}'\
                         \n${env.BUILD_URL}"
                     )
-				} else if ($BUILD_STATUS == 'FAILURE') {
+				} else if (currentBuild.currentResult == 'FAILURE') {
                     echo "Building Failed"
                     slackSend (
                         channel: "#jenkins-notification", 

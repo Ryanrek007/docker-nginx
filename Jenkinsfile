@@ -9,13 +9,13 @@ pipeline {
         stage("Testing-pipelines") {
             steps {
                 echo "Testing pipelines"
-                echo "on ${env.BRANCH_NAME}"
-                // echo "on ${BRANCH_NAME}"
-                echo "on ${BUILD_URL}"
-                echo "on ${env.BUILD_URL}"
-
-            }
-            
+                script{
+                    for (int i = 0; i <5; i++){
+                        echo "script ${i}"
+                        sleep(2)
+                    }
+                }
+            }           
         }
     }
 
@@ -26,7 +26,7 @@ pipeline {
                 channel: "#jenkins-notification", 
                 color: "good", 
                 message: 
-                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' on ${env.BRANCH_NAME} \
+                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}'\
                 \n${env.BUILD_URL}"
             )
         }
@@ -36,7 +36,7 @@ pipeline {
                 channel: "#jenkins-notification", 
                 color: "danger", 
                 message: 
-                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' on ${env.BRANCH_NAME} \
+                "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}'\
                 \n${env.BUILD_URL}"
             )
         }

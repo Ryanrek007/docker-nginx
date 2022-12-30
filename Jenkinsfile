@@ -26,7 +26,7 @@ pipeline {
                 echo "Testing pipelines"
                 script{
                     def data = [
-                        "firstName" : "Muhammad"
+                        "firstName" : "Muhammad",
                         "lastName" : "Ryan"
                     ]
                     writeJSON(file: "data.json", json: data)

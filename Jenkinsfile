@@ -18,6 +18,30 @@ pipeline {
     }
     
     stages{
+        //using Matrix
+        stage("Setup OS"){
+            matrix{
+                axes{
+                    axis{
+                        name "OS"
+                        values "linux", "windows"
+                    }
+                    axis{
+                        name "ARC"
+                        values "32", "64"
+                    }
+                }
+                //using stages to print result from matrix stages
+                stages{
+                    stage("OS Setup"){
+                        steps{
+                            echo "Setup ${OS}:${ARC}"
+                        }
+                    }
+                }
+            }
+        }
+
         //using pararel stage
         stage ("Preparation"){
             parallel{

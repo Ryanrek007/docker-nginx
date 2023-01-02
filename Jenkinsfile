@@ -104,7 +104,7 @@ pipeline {
                         channel: "#jenkins-notification", 
                         color: "good", 
                         message: 
-                        "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}'\
+                        "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' on branch '${env.BRANCH_NAME}'\
                         \n${env.BUILD_URL}"
                     )
 				} else if (currentBuild.currentResult == 'FAILURE') {
@@ -113,7 +113,7 @@ pipeline {
                         channel: "#jenkins-notification", 
                         color: "danger", 
                         message: 
-                        "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}'\
+                        "*${currentBuild.currentResult}:* Job #${env.BUILD_NUMBER} '${env.JOB_NAME}' on branch '${env.BRANCH_NAME}'\
                         \n${env.BUILD_URL}"
                     )
                 }

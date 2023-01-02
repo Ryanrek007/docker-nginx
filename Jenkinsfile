@@ -18,29 +18,29 @@ pipeline {
     }
     
     stages{
-        //using Matrix
-        stage("Setup OS"){
-            matrix{
-                axes{
-                    axis{
-                        name "OS"
-                        values "linux", "windows"
-                    }
-                    axis{
-                        name "ARC"
-                        values "32", "64"
-                    }
-                }
-                //using stages to print result from matrix stages
-                stages{
-                    stage("OS Setup"){
-                        steps{
-                            echo "Setup ${OS}:${ARC}"
-                        }
-                    }
-                }
-            }
-        }
+        // //using Matrix
+        // stage("Setup OS"){
+        //     matrix{
+        //         axes{
+        //             axis{
+        //                 name "OS"
+        //                 values "linux", "windows"
+        //             }
+        //             axis{
+        //                 name "ARC"
+        //                 values "32", "64"
+        //             }
+        //         }
+        //         //using stages to print result from matrix stages
+        //         stages{
+        //             stage("OS Setup"){
+        //                 steps{
+        //                     echo "Setup ${OS}:${ARC}"
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
 
         //using pararel stage
         stage ("Preparation"){
@@ -48,13 +48,13 @@ pipeline {
                 stage ("Prepare Test"){
                     steps{  
                         echo "Prepare test 1"
-                        sleep (5)
+                        sleep (3)
                     }
                 }
                 stage ("Prepare Test2"){
                     steps{
                         echo "Prepate test 2"
-                        sleep (5)
+                        sleep (3)
 
                     }
                 }

@@ -18,6 +18,21 @@ pipeline {
     }
     
     stages{
+        //using multi stages
+        stage ("Preparation"){
+            stages{
+                stage ("Prepare Test"){
+                    steps{
+                        echo "Prepare test 1"
+                    }
+                }
+                stage ("Prepare Test2"){
+                    steps{
+                        echo "Prepate test 2"
+                    }
+                }
+            }
+        }
         stage("Testing-pipelines") {
             steps {
                 echo "Testing pipelines"
@@ -50,6 +65,7 @@ pipeline {
                 echo "App Password: ${APP_PSW}"
             }           
         }
+
     }
     post{
         always {

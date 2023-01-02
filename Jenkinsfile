@@ -12,6 +12,10 @@ pipeline {
         disableConcurrentBuilds()
         timeout (time: 10, unit: 'MINUTES')
     }
+
+    triggers{
+        pollSCM ("* * * * *")
+    }
     
     stages{
         stage("Testing-pipelines") {

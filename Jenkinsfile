@@ -30,6 +30,17 @@ pipeline {
                 }
             }           
         }
+
+        stage("Testing Environment") {
+            environment{
+                APP = credentials("testing_rahasia")
+            }
+            steps {
+                echo "Merupakan contoh pengambilan dari Environment Jenkins username:password"
+                echo "App User: ${APP_USR}"
+                echo "App Password: ${APP_PSW}"
+            }           
+        }
     }
     post{
         always {

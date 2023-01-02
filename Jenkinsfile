@@ -12,11 +12,9 @@ pipeline {
         stage("Testing-pipelines") {
             steps {
                 echo "Testing pipelines"
-                script{
-                    sh "Nama Build: ${env.JOB_NAME} "
-                    sh "Job Number: ${env.BUILD_NUMBER}"
-                    sh "author: ${AUTHOR}"
-                } 
+                echo "Nama Build: ${env.JOB_NAME}"
+                echo "Job Number: ${env.BUILD_NUMBER}"
+                echo "author: ${AUTHOR}"
             }           
         }
     

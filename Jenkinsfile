@@ -8,6 +8,11 @@ pipeline {
         AUTHOR = "Ryan Firmansyah"
     }
     
+    options{
+        disableConcurrentBuilds()
+        timeout (time: 10, unit: 'MINUTES')
+    }
+    
     stages{
         stage("Testing-pipelines") {
             steps {

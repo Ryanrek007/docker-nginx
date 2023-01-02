@@ -4,23 +4,25 @@ pipeline {
             label "cicd"
        }
     }
+    environment{
+        AUTHOR = "Ryan Firmansyah"
+    }
     
     stages{
         stage("Testing-pipelines") {
             steps {
                 echo "Testing pipelines"
-                // script{
-                    // for (int i = 0; i <5; i++){
-                    //     echo "script ${i}"
-                    //     sleep(2)
-                    // }
-                // }
+                script{
+                    sh "Nama Build: ${env.JOB_NAME} "
+                    sh "Job Number: ${env.BUILD_NUMBER}"
+                    sh "author: ${AUTHOR}"
+                } 
             }           
         }
     
         stage("Testing scripting") {
             steps {
-                echo "Testing pipelines"
+                echo "Testing scripting"
                 script{
                     def data = [
                         "firstName" : "Muhammad",

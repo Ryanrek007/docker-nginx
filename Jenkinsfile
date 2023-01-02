@@ -18,17 +18,20 @@ pipeline {
     }
     
     stages{
-        //using multi stages
+        //using pararel stage
         stage ("Preparation"){
-            stages{
+            parallel{
                 stage ("Prepare Test"){
-                    steps{
+                    steps{  
                         echo "Prepare test 1"
+                        sleep (5)
                     }
                 }
                 stage ("Prepare Test2"){
                     steps{
                         echo "Prepate test 2"
+                        sleep (5)
+
                     }
                 }
             }
